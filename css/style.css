@@ -1,0 +1,31 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: black;
+    height: 100vh;
+}
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 90vw;
+    height: 80vh;
+    background-color: white; 
+}
+
+section.row-cams{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.cam{
+    width: calc(100% / 7);
+}
+
