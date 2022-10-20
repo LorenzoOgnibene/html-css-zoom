@@ -5,27 +5,94 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 main{
     background-color: black;
-    height: 100vh;
+    height: calc(100vh - 5.5rem);
+    overflow: auto;
 }
 
-.box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 90vw;
-    height: 80vh;
-    background-color: white; 
+header{
+    height: 5rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-align: right;
 }
 
-section.row-cams{
+
+.flex{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-article.user{
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+section.row-cams{
+    margin-bottom: 1rem;
+}
+
+.user{
+    background-image: url('https://picsum.photos/seed/picsum/280/140');
+    background-size: cover;
+    width: 240px;
+    height: 140px;
+    position: relative;
+}
+
+article.user:nth-last-of-type(even){
+    margin: 0 0.5rem;
+}
+
+div.name{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(99, 112, 125, 0.5);
+    font-size: 1.1rem;
+    padding: .2rem;
+}
+
+footer{
+    width: 100%;
+    height: 5.5rem;
+    background-color: #222222;
+}
+
+.c-white{
+    color: white;
+    font-size: 2.5rem;
+}
+
+div.mute,
+div.end{
+    flex-basis: 25%;
+}
+
+div.action{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.fa-solid{
+    padding: 0 .5rem
+}
+
+div.end{
+    align-self: center;
+    color: red;
+    font-size: 2rem;
 
 }
 
+div.end span{
+    background-color: #4a4a4a;
+    padding: 1.5rem;
+}
